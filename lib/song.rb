@@ -6,7 +6,8 @@
 #.new_by_filename associates new song instance with the artist from the filename
 ##artist_name= accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribut
 class Song
-  attr_accessor :name :artist
+  attr_accessor :name, :artist
+  @@all = []
   def initialize(name)
     @name = name
   end
