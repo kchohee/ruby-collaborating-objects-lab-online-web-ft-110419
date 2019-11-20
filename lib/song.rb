@@ -20,7 +20,7 @@ class Song
     s = Song.new(artist_track[1])
     a = Artist.find_or_create_by_name(artist_track[0])
     a.add_song(s)
-    return newbie
+    return s
   end
   def artist_name=()
   end
