@@ -32,7 +32,7 @@ class Artist
     found = @@all.find {|a| a.name == name}
     if found == nil
       return Artist.new(name)
-    else 
+    else
       return found
   end
   def print_songs
