@@ -19,6 +19,7 @@ class Song
     artist_track = file.split(" - ")
       newbie= Song.new(artist_track[1])
     newbie.artist =  Artist.find_or_create_by_name(artist_track[0])
+    return newbie
   end
   def artist_name=()
   end
