@@ -34,6 +34,7 @@ class Artist
       return Artist.new(name)
     else
       return found
+    end
   end
   def print_songs
 
