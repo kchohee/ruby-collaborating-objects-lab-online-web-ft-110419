@@ -7,7 +7,7 @@
 ##artist_name= accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribut
 class Song
   attr_accessor :name :artist
-  def initialize(name, artist)
+  def initialize(name)
     @name = name
   end
   def self.all
