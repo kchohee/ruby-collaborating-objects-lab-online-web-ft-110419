@@ -29,7 +29,11 @@ class Artist
     @songlist
   end
   def self.find_or_create_by_name(name)
-
+    found = @@all.find {|a| a.name == name}
+    if found == nil
+      return Artist.new(name)
+    else 
+      return found
   end
   def print_songs
 
