@@ -16,7 +16,9 @@ class Song
     @@all
   end
   def self.new_by_filename(file)
-    (file.split.collect {|fi|fil.split("-")}).flatten
+    artist_track = file.split.(" - ")
+    Song.new(artist_track{1})
+    Artist.find_or_create_by_name
   end
   def artist_name=()
   end
